@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Bootstrap 4 Template with Sidebar Menu</title>
+
+	<!-- CSS -->
+	
+
+
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3><a>Bootstrap 4 Template with Sidebar Menu</a></h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li class="active" *ngIf="isOrgLogin">
+					<a class="scroll-link"  routerLink="orgaprofile"><i class="fas fa-home"></i>Profile</a>
+				</li>
+				<li class="active" *ngIf="isLogin">
+					<a class="scroll-link" routerLink="donerprofile" ><i class="fas fa-home"></i>Profile</a>
+				</li>
+				<li>
+					<a class="scroll-link" routerLink="gallary"><i class="fas fa-cog"></i> Gallary</a>
+				</li>
+				<li *ngIf="isLogin">
+					<a class="scroll-link" routerLink="donateNow"><i class="fas fa-user"></i>Donate Now</a>
+				</li>
+				<li>
+					<a class="scroll-link" routerLink="post"><i class="fas fa-pencil-alt"></i> Post</a>
+				</li>
+				<li>
+					<a class="scroll-link" routerLink="more"><i class="fas fa-envelope"></i>More</a>
+				</li>
+				
+				
+			</ul>
+
+			<div *ngIf="isLogin" class="to-top">
+				<a class="btn btn-primary btn-customized-3" href="#" role="button" (click)="submitLogout()">
+					<i class="fas fa-arrow-up"></i> Logout
+				</a>
+			</div>
+
+			<div *ngIf="isOrgLogin" class="to-top">
+				<a class="btn btn-primary btn-customized-3" href="#" role="button" (click)="orgLogout()">
+					<i class="fas fa-arrow-up"></i> Logout
+				</a>
+			</div>
+
+			<div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+			</div>
+
+			<!-- <div *ngIf="isLogin">
+				<button type="button"  (click)="submitLogout()">Logout</button>
+			</div>
+			 -->
+
+		</nav>
+		<!-- End sidebar -->
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<!-- open sidebar menu -->
+			<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+				<i class="fas fa-align-left"></i> <span>Menu</span>
+			</a>
+
+
+		</div>
+		<!-- End content -->
+
+	</div>
+	<!-- End wrapper -->
+
+	<!-- Javascript -->
+
+
+</body>
+
+</html>
