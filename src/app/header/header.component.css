@@ -7,7 +7,7 @@ a { color: #f35b3f; border-bottom: 1px dashed #f35b3f; text-decoration: none; tr
 a:hover, a:focus { color: #f35b3f; border: 0; text-decoration: none; }
 
 h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 100; color: #555; line-height: 50px; }
-h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; }
+h3 { font-size: 22px; font-weight: 300; color: white; line-height: 30px; }
 h4 { font-size: 18px; font-weight: 300; color: #555; line-height: 26px; }
 
 img { max-width: 100%; }
